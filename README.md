@@ -41,8 +41,8 @@
 
 ## PR(Pull Request) 규칙
 - 각 스터디별 repository를 fork해서 본인 이름으로 만든 폴더에서 작업하고 commit후 Pull request를 보냅니다. PR은 각 주차별 실습코드와 과제 내용 commit을 함께 보냅니다.
-- 제목은 [n주차 리액트 스터디] 이름으로 설정합니다.
-  - ex) [2주차 리액트 스터디] 홍길동
+- 제목은 [n주차 유니티 스터디] 이름으로 설정합니다.
+  - ex) [2주차 유니티 스터디] 홍길동
 
 ## 스터디 자료
 - 유데미(Ben Tristem, Rick Davidson, GameDev.tv Team) - C#과 Unity로 3D 게임 개발하기

@@ -1,0 +1,18 @@
+using UnityEngine;
+
+public class Mover : MonoBehaviour
+{
+    [SerializeField] float xValue = 0f; //부동소수점?
+    [SerializeField] float yValue = 0.001f;
+    [SerializeField] float zValue = 0f;
+
+    void Start()
+    {
+        
+    }
+
+    void Update()
+    {
+        transform.Translate(xValue,yValue,zValue);
+    }
+}

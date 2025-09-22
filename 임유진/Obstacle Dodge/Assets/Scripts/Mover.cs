@@ -2,17 +2,30 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
-    [SerializeField] float xValue = 0f; //부동소수점?
-    [SerializeField] float yValue = 0.001f;
-    [SerializeField] float zValue = 0f;
+    [SerializeField] float moveSpeed = 10f;
+
+
 
     void Start()
     {
-        
+        PrintInstruction();
     }
 
     void Update()
     {
-        transform.Translate(xValue,yValue,zValue);
+        MovePlayger();
     }
+
+    void PrintInstruction()
+    {
+        Debug.Log("Welcome to the game!");
+        Debug.Log("Move using arrow keys or wasd");
+        Debug.Log("Don't bump into objects!");
+    }
+
+    void MovePlayger(){
+        float xValue = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
+        float yValue = 0;
+        float zValue = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
+        transform.Translate(xValue, yValue, zValue);}
 }

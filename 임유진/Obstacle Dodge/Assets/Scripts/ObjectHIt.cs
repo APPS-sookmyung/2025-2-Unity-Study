@@ -2,9 +2,14 @@ using UnityEngine;
 
 public class ObjectHIt : MonoBehaviour
 {
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision other)
     {
-        GetComponent<MeshRenderer>().material.color = Color.black;
-        Debug.Log("Something hit me!");
+        // 플레이어에게 부딪히면 색 및 태그 변화
+        if (other.gameObject.tag == "Player")
+        {
+            GetComponent<MeshRenderer>().material.color = Color.black;
+            gameObject.tag = "Hit";
+        }
+    
     }
 }

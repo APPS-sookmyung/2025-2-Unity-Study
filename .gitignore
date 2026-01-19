@@ -1,4 +1,6 @@
+# =============== #
 # Unity generated #
+# =============== #
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
@@ -24,3 +26,22 @@ MemoryCaptures/
 
 # Crash reports
 sysinfo.txt
+
+# Builds
+Builds/
+connectwebgl/
+webgl_sharing
+*.zip
+
+# IDE / Editor
+.vscode/
+.vs/
+.idea/
+UserSettings/
+*.user
+*.suo
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db

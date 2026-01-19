@@ -1,0 +1,50 @@
+# =============== #
+# Unity generated #
+# =============== #
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]serSettings/
+MemoryCaptures/
+
+# Asset meta data should only be ignored when the corresponding asset is also ignored
+*.pidb
+*.suo
+*.user
+*.userprefs
+*.csproj
+*.unityproj
+*.sln
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# New Visual Studio Solution format
+*.slnx
+
+# Crash reports
+sysinfo.txt
+
+# Builds
+Builds/
+connectwebgl/
+webgl_sharing
+*.zip
+
+# IDE / Editor
+.vscode/
+.vs/
+.idea/
+UserSettings/
+*.user
+*.suo
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db

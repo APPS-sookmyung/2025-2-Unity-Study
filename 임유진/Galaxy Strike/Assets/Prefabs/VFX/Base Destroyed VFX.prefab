@@ -11,7 +11,10 @@ GameObject:
   - component: {fileID: 8883393674383038800}
   - component: {fileID: 1883265304294283925}
   - component: {fileID: 4795991763073146625}
+<<<<<<< HEAD
   - component: {fileID: 4948087174355183125}
+=======
+>>>>>>> 4dd90dc92f53410534ab9e18b9989472d2d3513e
   m_Layer: 0
   m_Name: Base Destroyed VFX
   m_TagString: Untagged
@@ -4895,6 +4898,7 @@ ParticleSystemRenderer:
   m_MeshWeighting1: 1
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
+<<<<<<< HEAD
 --- !u!82 &4948087174355183125
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4992,3 +4996,5 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+=======
+>>>>>>> 4dd90dc92f53410534ab9e18b9989472d2d3513e

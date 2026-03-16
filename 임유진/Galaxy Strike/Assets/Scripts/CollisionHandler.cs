@@ -4,6 +4,7 @@ public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] GameObject destroyedVFX; 
 
+<<<<<<< HEAD
     GameSceneManager gameSceneManager;
 
     private void Start()
@@ -15,6 +16,10 @@ public class CollisionHandler : MonoBehaviour
     {
         gameSceneManager.ReloadLevel();
 
+=======
+    private void OnTriggerEnter(Collider other)
+    {
+>>>>>>> 4dd90dc92f53410534ab9e18b9989472d2d3513e
         // Debug.Log("Hit " + other.name);
         // Debug.Log($"Hit {other.gameObject.name}");
 

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem; 
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class PlayerWeapon : MonoBehaviour
 {
     [SerializeField] GameObject[] lasers;
     [SerializeField] RectTransform crosshair;
@@ -20,6 +20,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
         ProcessFiring();
         MoveCrosshair();
         MoveTargetPoint();
+        AimLasers();
     }
 
     public void OnFire(InputValue value)
@@ -51,4 +52,13 @@ public class NewMonoBehaviourScript : MonoBehaviour
         targetPoint.position = Camera.main.ScreenToWorldPoint(screenPos);
     }
 
+    void AimLasers()
+    {
+        foreach (GameObject laser in lasers)
+        {
+            Vector3 fireDirection = targetPoint.position - this.transform.position; // 목표 위치 - 레이저 위치 
+            Quaternion rotationToTarget = Quaternion.LookRotation(fireDirection); // 레이저를 위 벡터에 맞추도록 회전 계산 
+            laser.transform.rotation = rotationToTarget;
+        }
+    }
 }

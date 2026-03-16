@@ -1,0 +1,5 @@
+임유진 filter=lfs diff=lfs merge=lfs -text
+*.fbs filter=lfs diff=lfs merge=lfs -text
+
+# 대용량 모델 파일 제외
+*.fbx

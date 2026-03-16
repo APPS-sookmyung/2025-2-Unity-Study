@@ -48,3 +48,15 @@ UserSettings/
 # OS
 .DS_Store
 Thumbs.db
+
+# etc
+/[Aa]ssetStoreTools*/    
+/[Rr]ecordings*/        
+/[Aa]ssets/AddressableAssetsData/Windows/* 
+/[Aa]ssets/StreamingAssets/aa/* 
+/Assets/Imported Assets/Bilboard_Capture/*
+*.fbx
+
+# about python, log
+*.log
+*.pyc
